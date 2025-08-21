@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kgosi Maebela" />
-    <link rel="stylsheet" href="styles.css" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
     <title>MiCanvas Resources Page</title>
     <!--  The following presents static html code for the resources page for
     UluntuXD's Micanvas EXD Learner Program -->
@@ -16,18 +16,18 @@
     />
   </head>
   <body>
-    <section id="CTA" class="CTA">
-      <div>
-        <span>Home</span>
+    <section id="main" class="main">
+      <div class="main-breadcrumbs">
+        <span class="breadcrumb-label">Home</span>
         <span class="material-symbols-outlined"> arrow_forward </span>
         <span>MiCanvas</span>
         <span class="material-symbols-outlined"> arrow_forward </span>
         <span>Resources</span>
       </div>
-
-      <div>
-        <h1>Program Resources</h1>
-        <p>
+      <br /><br />
+      <div class="main-CTA">
+        <h1 class="micanvas-resources-page-h1">Program Resources</h1>
+        <p class="micanvas-resources-page-p">
           Discover everything about the MiCanvas Learner Program from learning
           outcomes and expectations, code of conduct and community guidelines,
           to program schedule and more.
@@ -35,133 +35,361 @@
       </div>
     </section>
 
-    <section id="micanvas-documents" class="documents">
+    <section id="micanvas-documents" class="resources-micanvas-documents">
       <div class="documents">
         <!-- Code for where the section title "Documents" and the number
          of documents that an end user can download or preiview will be. Refer to the Figma wireframe
           -->
-        <div class="section-title">
-          <h2>Documents</h2>
-          <div class="number-of-documents"><span>5</span></div>
+        <div class="documents-heading-and-amount">
+          <h2 class="documents-heading">Documents</h2>
+          <div class="container-documents-amount">
+            <p class="documents-amount">5</p>
+          </div>
         </div>
 
         <!-- The following code is for the individual cards
       for the resources document cards -->
-
-        <div class="micanvas-program-documents">
+        <div class="downloadable-documents">
           <!-- Resources Document Card 01-->
-          <div>
-            <div class="resources-document-card-head">
-              <div class="document-icon">fsd</div>
-              <div class="document-name">
-                Fee Structure &<span>Payment Methods</span>
+          <div
+            id="resources-downloadable-document"
+            class="card-downloadable-document-type-one"
+          >
+            <div class="card-downloadable-document-content">
+              <div class="document-head">
+                <div class="document-title-and-icon">
+                  <!-- For the moment, the icon for the downloadable document 
+                  is just an abbreviation of the document. Use a <span> where 
+                  you'll capitalize the letters of the abbreviation
+                  
+                  In the futur, will need to replace the abbreviation with an 
+                  actual icon, that's an svg.
+                -->
+                  <div class="document-icon">
+                    <span class="icon-document-abbreviation">fsd</span>
+                  </div>
+                  <div class="document-title">
+                    Fee Structure &
+                    <span class="new-line">Payment Methods</span>
+                  </div>
+                </div>
+                <div class="document-description">
+                  <p>
+                    Access the detailed fee structure for the MiCanvas
+                    Experience Design Learner Program, covering one-time
+                    onboarding and registration fees as well as payment method
+                    options
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="document-card-content">
-              <p>
-                Access the detailed fee structure for the MiCanvas Experience
-                Design Learner Program, covering one-time onboarding and
-                registration fees as well as payment method options
-              </p>
-            </div>
-            <button type="button" class="document-button">
               <a
                 href="https://onedrive.live.com/?id=EC7F4357B052262D%21s95ceb0888cef471eb6050f43db050663&cid=EC7F4357B052262D&parId=EC7F4357B052262D%21s0a35b1a7d4f545cda8a3fc967d4d30c1&o=OneUp&ls=true&migratedtospo=true&ithint=file%2Cpdf"
                 target="_blank"
+                alt="Fee Structure & Payment Methods Document"
+                class="document-button-link"
               >
-                <span>Download</span>
-                <span class="material-symbols-outlined">download</span>
+                <button type="button" class="button-download-document">
+                  <span class="button-download-label">Download</span>
+                  <!-- Download Icon-->
+                  <svg
+                    width="64px"
+                    height="64px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M16 11L12 15M12 15L8 11M12 15V3M21 15V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V15"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
               </a>
-            </button>
+            </div>
           </div>
-
           <!-- Resources Document Card 02-->
-          <div>
-            <div class="resources-document-card-head">
-              <div class="document-icon">s&c</div>
-              <div class="document-name">
-                Program Schedule <span>& Weekly Calendar</span>
+          <div
+            id="resources-downloadable-document"
+            class="card-downloadable-document-type-one"
+          >
+            <div class="card-downloadable-document-content">
+              <div class="document-head">
+                <div class="document-title-and-icon">
+                  <!-- For the moment, the icon for the downloadable document 
+                  is just an abbreviation of the document. Use a <span> where 
+                  you'll capitalize the letters of the abbreviation
+                  
+                  In the futur, will need to replace the abbreviation with an 
+                  actual icon, that's an svg.
+                -->
+                  <div class="document-icon">
+                    <span class="icon-document-abbreviation">s&c</span>
+                  </div>
+                  <div class="document-title">
+                    Program Schedule
+                    <span class="new-line">& Weekly Calendar</span>
+                  </div>
+                </div>
+                <div class="document-description">
+                  <p>
+                    This document provides the full program schedule along with
+                    a weekly calendar of learning sessions to help you plan your
+                    journey
+                  </p>
+                </div>
               </div>
+              <a
+                href="https://online.fliphtml5.com/cwqsi/ulbx/#p=1"
+                target="_blank"
+                alt="Fee Structure & Payment Methods Document"
+                class="document-button-link"
+              >
+                <button type="button" class="button-download-document">
+                  <span class="button-download-label">Preview</span>
+                  <!-- External Link -->
+                  <?xml version="1.0"?><svg
+                    class="feather feather-external-link"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" x2="21" y1="14" y2="3" />
+                  </svg>
+                </button>
+              </a>
             </div>
-            <div class="document-card-content">
-              <p>
-                This document provides the full program schedule along with a
-                weekly calendar of learning sessions to help you plan your
-                journey
-              </p>
-            </div>
-            <button type="button" class="document-button">
-              <span>Preview</span>
-              <span class="material-symbols-outlined"> open_in_new </span>
-            </button>
           </div>
-
           <!-- Resources Document Card 03-->
-          <div>
-            <div class="resources-document-card-head">
-              <div class="document-icon">faq</div>
-              <div class="document-name">
-                <span> Micanvas Frequently Asked Questions</span>
+          <div
+            id="resources-downloadable-document"
+            class="card-downloadable-document-type-one"
+          >
+            <div class="card-downloadable-document-content">
+              <div class="document-head">
+                <div class="document-title-and-icon">
+                  <!-- For the moment, the icon for the downloadable document 
+                  is just an abbreviation of the document. Use a <span> where 
+                  you'll capitalize the letters of the abbreviation
+                  
+                  In the futur, will need to replace the abbreviation with an 
+                  actual icon, that's an svg.
+                -->
+                  <div class="document-icon">
+                    <span class="icon-document-abbreviation">faq</span>
+                  </div>
+                  <div class="document-title">
+                    MiCanvas Frequently
+                    <span class="new-line">Asked Questions</span>
+                  </div>
+                </div>
+                <div class="document-description">
+                  <p>
+                    Find quick, straightforward answers to the most common
+                    questions about joining and navigating the MiCanvas
+                    Experience Design Learner Program
+                  </p>
+                </div>
               </div>
+              <a
+                href="https://onedrive.live.com/?ls=true&cid=EC7F4357B052262D&id=EC7F4357B052262D%21sbb441ea1b9224e6a92ca66e942963fb0&parId=EC7F4357B052262D%21s0a35b1a7d4f545cda8a3fc967d4d30c1&o=OneUp"
+                target="_blank"
+                alt="Fee Structure & Payment Methods Document"
+                class="document-button-link"
+              >
+                <button type="button" class="button-download-document">
+                  <span class="button-download-label">Download</span>
+                  <!-- Download Icon-->
+                  <svg
+                    width="64px"
+                    height="64px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M16 11L12 15M12 15L8 11M12 15V3M21 15V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V15"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </a>
             </div>
-            <div class="document-card-content">
-              <p>
-                Find quick, straightforward answers to the most common questions
-                about joining and navigating the MiCanvas Experience Design
-                Learner Program
-              </p>
-            </div>
-            <button type="button" class="document-button">
-              <span>Download</span>
-              <span class="material-symbols-outlined"> download</span>
-            </button>
           </div>
-
           <!-- Resources Document Card 04-->
-          <div>
-            <div class="resources-document-card-head">
-              <div class="document-icon">mhb</div>
-              <div class="document-name">
-                <span> Micanvas Cohort 2025 Handbook</span>
+          <div
+            id="resources-downloadable-document"
+            class="card-downloadable-document-type-two"
+          >
+            <div class="card-downloadable-document-content">
+              <div class="document-head">
+                <div class="document-title-and-icon">
+                  <!-- For the moment, the icon for the downloadable document 
+                  is just an abbreviation of the document. Use a <span> where 
+                  you'll capitalize the letters of the abbreviation
+                  
+                  In the futur, will need to replace the abbreviation with an 
+                  actual icon, that's an svg.
+                -->
+                  <div class="document-icon document-icon-type-two">
+                    <span class="icon-document-abbreviation">mhb</span>
+                  </div>
+                  <div class="document-title-type-two">
+                    MiCanvas Cohort
+                    <span class="new-line">2025 Handbook</span>
+                  </div>
+                </div>
+                <div class="document-description document-description-type-two">
+                  <p>
+                    Access the MiCanvas program handbook for comprehensive
+                    information on learner outcomes and expectations as well as
+                    onboarding processes
+                  </p>
+                </div>
               </div>
+              <a
+                href="https://online.fliphtml5.com/cwqsi/ujau/#p=1"
+                target="_blank"
+                alt="Fee Structure & Payment Methods Document"
+                class="document-button-link"
+              >
+                <button
+                  type="button"
+                  class="button-download-document button-download-document-type-two"
+                >
+                  <span class="button-download-label">Preview</span>
+                  <!-- External Link Icon-->
+                  <?xml version="1.0"?><svg
+                    class="feather feather-external-link"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" x2="21" y1="14" y2="3" />
+                  </svg>
+                </button>
+              </a>
             </div>
-            <div class="document-card-content">
-              <p>
-                Access the MiCanvas program handbook for comprehensive
-                information on learner outcomes and expectations as well as
-                onboarding processes
-              </p>
-            </div>
-            <button type="button" class="document-button">
-              <span>Preview</span>
-              <span class="material-symbols-outlined"> open_in_new </span>
-            </button>
           </div>
-
-          <!-- Resources Document Card 05 -->
-          <div>
-            <div class="resources-document-card-head">
-              <div class="document-icon">ccg</div>
-              <div class="document-name">
-                <span> Code of Conduct & Community Guidelines</span>
+          <!-- Resources Document Card 05-->
+          <div
+            id="resources-downloadable-document"
+            class="card-downloadable-document-type-one"
+          >
+            <div class="card-downloadable-document-content">
+              <div class="document-head">
+                <div class="document-title-and-icon">
+                  <!-- For the moment, the icon for the downloadable document 
+                  is just an abbreviation of the document. Use a <span> where 
+                  you'll capitalize the letters of the abbreviation
+                  
+                  In the futur, will need to replace the abbreviation with an 
+                  actual icon, that's an svg.
+                -->
+                  <div class="document-icon">
+                    <span class="icon-document-abbreviation">ccg</span>
+                  </div>
+                  <div class="document-title">
+                    Code of Conduct
+                    <span class="new-line">& Community Guidelines</span>
+                  </div>
+                </div>
+                <div class="document-description">
+                  <p>
+                    Download the MiCanvas Code of Conduct & Community Guidelines
+                    to understand the values, standards, and expectations for
+                    all learners, mentors, and UluntuXD staff .
+                  </p>
+                </div>
               </div>
+              <a
+                href="https://online.fliphtml5.com/cwqsi/ujau/#p=1"
+                target="_blank"
+                alt="Fee Structure & Payment Methods Document"
+                class="document-button-link"
+              >
+                <button type="button" class="button-download-document">
+                  <span class="button-download-label">Download</span>
+
+                  <!--Download Icon-->
+                  <svg
+                    width="64px"
+                    height="64px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M16 11L12 15M12 15L8 11M12 15V3M21 15V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V15"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </a>
             </div>
-            <div class="document-card-content">
-              <p>
-                Download the MiCanvas Code of Conduct & Community Guidelines to
-                understand the values, standards, and expectations for all
-                learners, mentors, and UluntuXD staff.
-              </p>
-            </div>
-            <button type="button" class="document-button">
-              <span>Download</span>
-              <span class="material-symbols-outlined"> download</span>
-            </button>
           </div>
         </div>
       </div>
     </section>
   </body>
+
+  <br /><br /><br /><br />
+
   <footer>
     <div class="footer">
       <div class="footer-resources">

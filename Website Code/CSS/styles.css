@@ -1,0 +1,311 @@
+/* || IMPORT WEBSITE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+  /* FONT */
+
+  /*
+  The following is a legend providing context regarding 
+  the abbreviations used for the font variables:
+  - "FF" = Font Family;
+  - "FS" = Font Size;
+  */
+  --FF: "Merriweather Sans", sans-serif;
+  --FS-default: 16px;
+  --FS-CTA-PARAGRAPH: 1.25rem;
+  --FS-H1: 3.75rem; /* 60px */
+  /*  --FS-CTA-paragraph: 2rem; /* 32px */
+  --FS-H2: 2.25rem; /* 36px*/
+  --FS-downloadable-document-title: 2.25rem; /* 36px */
+  --FS-downloadable-document-amount-tag: 1.25rem; /* 20px */
+
+  /* COLOR */
+
+  /*   
+  The following is a legend providing context regarding 
+  the abbreviations used for the color variables:
+  - "PG-COLOR" = Page Color;
+  - "TXT-COLOR" = Text Color;
+  - "ALT-TXT-COLOR = Alternate Text Color;
+  - "BTN-TXT-COLOR" = Button Text Color;
+  - "BRAND-COLOR" = Brand Color;
+  - "BG-DOCUMENT-CARD-ICON" = Background Document Card Icon;
+  */
+  --PG-COLOR: #000000;
+  --TXT-COLOR: #ffffff;
+  --ALT-TXT-COLOR: #000000;
+  --BTN-TXT-COLOR: #ffffff;
+  --BRAND-COLOR: #c05728; /* The color is called "Sinopia" and is a brand color for UluntuXD */
+
+  --BG-DOCUMENT-CARD-ICON: #faf9f6; /* This color is called "Baby Powder" */
+  --BG-DOCUMENTS-AMOUNT-TAG: #f5b198; /* This color is called "Melon"*/
+  --BG-DOCUMENTS-CARD-BUTTON: #000000;
+}
+
+html {
+  font-size: var(--FS-default);
+  font-family: var(--FF);
+  color: var(--TXT-COLOR);
+}
+
+body {
+  margin: 120px;
+  width: 100% auto;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--PG-COLOR);
+}
+
+.main {
+  width: 100%;
+  height: 699px;
+  max-height: 699px;
+}
+
+.main-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.main-CTA {
+  width: 765px; /* Previously 965px*/
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.micanvas-resources-page-h1 {
+  width: 100%;
+}
+
+.micanvas-resources-page-p {
+  width: 100%;
+  font-size: var(--FS-CTA-PARAGRAPH);
+}
+
+h1 {
+  font-size: var(--FS-H1);
+}
+
+h2 {
+  font-size: var(--FS-H2);
+}
+
+/* MICANVAS - RESOURCES PAGES - DOWNLOADABLE DOCUMENTS*/
+
+.resources-micanvas-documents {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.documents {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.documents-heading-and-amount {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.documents-heading {
+  font-family: var(--FF);
+  font-weight: 800;
+  display: flex;
+}
+
+.container-documents-amount {
+  width: auto;
+  height: auto;
+  padding: 4px 16px;
+  background-color: var(--BG-DOCUMENTS-AMOUNT-TAG);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.documents-amount {
+  font-size: 1.5rem;
+  color: var(--ALT-TXT-COLOR);
+  font-weight: 700;
+}
+
+/* DOWNLOADABLE DOCUMENTS*/
+.downloadable-documents {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+.card-downloadable-document-type-one {
+  width: 48%;
+  padding: 3rem;
+  display: flex;
+  justify-content: flex-start;
+
+  border-radius: 12px;
+  background: url("https://i.pinimg.com/736x/af/ba/ab/afbaabab03d1f6ae23ec015e548ed8a0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*CSS styling for downloadable documents card 
+that is focal document in that it has a different background 
+for it's default state. (Sinopia noise gradient card)*/
+.card-downloadable-document-type-two {
+  width: 48%;
+  padding: 3rem;
+  display: flex;
+  justify-content: flex-start;
+
+  border-radius: 12px;
+  background: url("https://i.pinimg.com/736x/0d/81/a5/0d81a59f7c3e9a014d6a29b7916ed86e.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card-downloadable-document-content {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.document-head {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.document-title-and-icon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.document-icon {
+  width: 131px;
+  height: auto;
+  padding: 38px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 24px;
+  background-color: var(--BG-DOCUMENT-CARD-ICON);
+}
+
+.document-icon-type-two {
+  background-color: var(--BRAND-COLOR);
+}
+
+.icon-document-abbreviation,
+.document-title {
+  font-size: 1.5rem;
+  color: var(--ALT-TXT-COLOR);
+}
+
+/* ||*/
+.document-title-type-two {
+  font-size: 1.5rem;
+  color: var(--TXT-COLOR);
+  font-weight: 800;
+}
+
+.icon-document-abbreviation {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.document-title {
+  font-weight: 800;
+}
+
+.new-line {
+  display: block;
+}
+
+/* DOWNLOADABLE DOCUMENTS
+- Document descrtiption */
+.document-description {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--ALT-TXT-COLOR);
+}
+
+.document-description-type-two {
+  color: var(--TXT-COLOR);
+}
+
+/* DOWNLOADABLE DOCUMENT CARD BUTTON
+- */
+.document-button-link {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-download-document {
+  width: 334px;
+  height: auto;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  background-color: var(--BRAND-COLOR);
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.button-download-document-type-two {
+  background-color: var(--BG-DOCUMENTS-CARD-BUTTON);
+}
+
+.button-download-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--TXT-COLOR);
+}
+
+/* DOWNLOADABLE DOCUMENT CARD BUTTON ICONS*/
+svg {
+  width: 40px;
+  height: 40px;
+  stroke: #ffffff;
+}

@@ -158,16 +158,33 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
+  /*Concerning the "downloadable-documents" container, the container
+   essentially is meant to hold 2 cards in a single row. The items have 
+   a spacing of 32px (2rem) between them. */
+  justify-content: space-between;
 }
 
 .card-downloadable-document-type-one {
-  width: 48%;
-  padding: 3rem;
+  /* width: 48%; */
+
+  /*Card Dimension Constraints*/
+  max-height: 484px;
+  min-height: 484px;
+
+  /*Flex Properties*/
   display: flex;
   justify-content: flex-start;
+  /*NB!!!*/
+  flex-basis: calc(
+    50% - 1rem
+  ); /*50% of the container width minus half the gap */
+  flex-grow: 0;
+  flex-shrink: 0;
 
+  /*Styling*/
+  padding: 3rem;
   border-radius: 12px;
-  background: url("https://i.pinimg.com/736x/af/ba/ab/afbaabab03d1f6ae23ec015e548ed8a0.jpg");
+  background: url("https://i.pinimg.com/736x/7c/1a/df/7c1adf7d0ca4f8da0fa1aadad7e934d4.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -177,11 +194,24 @@ h2 {
 that is focal document in that it has a different background 
 for it's default state. (Sinopia noise gradient card)*/
 .card-downloadable-document-type-two {
-  width: 48%;
-  padding: 3rem;
+  /*  width: 48%; */
+
+  /*Card Dimension Constraints*/
+  max-height: 484px;
+  min-height: 484px;
+
+  /*Flex Properties*/
   display: flex;
   justify-content: flex-start;
+  /*NB!!!*/
+  flex-basis: calc(
+    50% - 1rem
+  ); /*50% of the container width minus half the gap */
+  flex-grow: 0;
+  flex-shrink: 0;
 
+  /*Styling*/
+  padding: 3rem;
   border-radius: 12px;
   background: url("https://i.pinimg.com/736x/0d/81/a5/0d81a59f7c3e9a014d6a29b7916ed86e.jpg");
   background-size: cover;
@@ -190,6 +220,11 @@ for it's default state. (Sinopia noise gradient card)*/
 }
 
 .card-downloadable-document-content {
+  /*Dimension Constraints*/
+  max-height: 388px;
+  min-height: 260px;
+
+  /*Flex Properties*/
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -200,6 +235,12 @@ for it's default state. (Sinopia noise gradient card)*/
   width: 100%;
   height: auto;
   padding-bottom: 2rem;
+
+  /*Dimension Constraints*/
+  max-height: 276px;
+  min-height: 188px;
+
+  /*Flex Properties*/
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -209,6 +250,12 @@ for it's default state. (Sinopia noise gradient card)*/
 .document-title-and-icon {
   width: 100%;
   height: auto;
+
+  /*Dimension Constraints*/
+  max-height: 122px;
+  min-height: 74px;
+
+  /*Flex Properties*/
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -231,15 +278,19 @@ for it's default state. (Sinopia noise gradient card)*/
   background-color: var(--BRAND-COLOR);
 }
 
-.icon-document-abbreviation,
-.document-title {
-  font-size: 1.5rem;
+.icon-document-abbreviation {
+  font-size: 1.75rem;
   color: var(--ALT-TXT-COLOR);
+}
+
+.document-title {
+  font-size: 1.75rem;
+  color: var(--TXT-COLOR);
 }
 
 /* ||*/
 .document-title-type-two {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--TXT-COLOR);
   font-weight: 800;
 }
@@ -262,7 +313,11 @@ for it's default state. (Sinopia noise gradient card)*/
   width: 100%;
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--ALT-TXT-COLOR);
+  color: var(--TXT-COLOR);
+
+  /*Dimension Constraints*/
+  max-height: 122px;
+  min-height: 74px;
 }
 
 .document-description-type-two {
@@ -282,12 +337,19 @@ for it's default state. (Sinopia noise gradient card)*/
 .button-download-document {
   width: 334px;
   height: auto;
-  padding: 12px 0;
+
+  /*Dimension Constraints*/
+  max-height: 64px;
+  min-height: 48px;
+
+  /*Flex Properties*/
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 
+  /*Styling*/
+  padding: 12px 0;
   background-color: var(--BRAND-COLOR);
   border: none;
   border-radius: 0.75rem;
@@ -308,4 +370,58 @@ svg {
   width: 40px;
   height: 40px;
   stroke: #ffffff;
+}
+
+/*DOWNLOADABLE DOCUMENT CARDS: HOVER STATES*/
+
+.card-downloadable-document-type-one:hover {
+  /*Styling
+  - when the end user hovers their mouse over the 
+    downloadable document card, the background image
+    changes to it's hovered state, which is a lighter 
+    color noise gradient.*/
+  background: url("https://i.pinimg.com/736x/af/ba/ab/afbaabab03d1f6ae23ec015e548ed8a0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  & .document-title {
+    color: var(--ALT-TXT-COLOR);
+  }
+
+  & .document-description {
+    color: var(--ALT-TXT-COLOR);
+  }
+
+  & .button-download-document {
+    background-color: var(--BG-DOCUMENTS-CARD-BUTTON);
+  }
+}
+
+.card-downloadable-document-type-two:hover {
+  /*Styling
+  - when the end user hovers their mouse over the 
+    downloadable document card, the background image
+    changes to it's hovered state, which is a lighter 
+    color noise gradient.*/
+  background: url("https://i.pinimg.com/736x/af/ba/ab/afbaabab03d1f6ae23ec015e548ed8a0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  & .document-title-type-two {
+    color: var(--ALT-TXT-COLOR);
+  }
+
+  & .document-description-type-two {
+    color: var(--ALT-TXT-COLOR);
+  }
+
+  & .document-icon-type-two {
+    background-color: var(--BG-DOCUMENT-CARD-ICON);
+  }
+
+  & .button-download-document-type-two {
+    background-color: var(--BRAND-COLOR);
+  }
 }

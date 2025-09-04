@@ -487,3 +487,104 @@ footer li,
   padding: 80px 0 0 0;
   justify-content: center;
 }
+
+/* Media Queries */
+
+@media (min-width: 481px) {
+  #logo-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    /* FONT */
+
+    --FS-default: 16px;
+    --FS-CTA-PARAGRAPH: 1rem; /* 20px */
+    --FS-H1: 2.25rem; /* 36px */
+    --FS-H2: 1.55rem; /* 24px*/
+    --FS-downloadable-document-title: 2.25rem; /* 36px */
+    --FS-downloadable-document-amount-tag: 1.25rem; /* 20px */
+  }
+
+  body {
+    margin: 24px;
+  }
+
+  /* navbar*/
+  #logo-desktop {
+    display: none;
+  }
+
+  /* */
+
+  .main-breadcrumbs {
+    font-size: 14px;
+  }
+
+  .main-CTA {
+    width: 382px;
+  }
+
+  h1 {
+    font-size: var(--FS-H1);
+  }
+
+  h2 {
+    font-size: var(--FS-H2);
+  }
+
+  /* MICANVAS - RESOURCES PAGES - DOWNLOADABLE DOCUMENTS*/
+
+  .micanvas-resources-page-p {
+    font-size: var(--FS-CTA-PARAGRAPH);
+  }
+
+  .card-downloadable-document-type-one,
+  .card-downloadable-document-type-two {
+    padding: 1.5rem;
+    max-height: 484px;
+    min-height: 308px;
+  }
+
+  .document-icon {
+    width: 85px;
+    height: 73px;
+    padding: 16px 24px;
+    border-radius: 10px;
+  }
+
+  .icon-document-abbreviation {
+    font-size: 1rem;
+  }
+
+  .document-title {
+    font-size: 1rem;
+  }
+
+  .document-description {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+
+  .button-download-document {
+    width: 334px;
+    height: 48px;
+
+    /*Styling*/
+    padding: 12px 0;
+    border-radius: 0.625rem;
+  }
+
+  .button-download-label {
+    font-size: 1.25rem;
+  }
+
+  /* DOWNLOADABLE DOCUMENT CARD BUTTON ICONS*/
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: #ffffff;
+  }
+}

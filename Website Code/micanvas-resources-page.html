@@ -20,30 +20,75 @@
       <!-- MAIN NAVBAR
        Recently Added-->
       <div class="main-navbar">
-        <img
-          src="/Website Code/Assets/logo-UluntuXD.svg"
-          alt="UluntuXD Logo"
-          id="logo-desktop"
-        />
-        <img
-          src="/Website Code/Assets/logo-UXD-UluntuXD.svg"
-          alt="UluntuXD Logo"
-          id="logo-mobile"
-        />
-        <ul>
-          <li><a href="" class="navbar-link">Home</a></li>
-          <li><a href="" class="navbar-link">Services</a></li>
-          <li><a href="" class="navbar-link">About</a></li>
-          <li><a href="" class="navbar-link">MiCanvas</a></li>
-          <li><a href="" class="navbar-link">Blog</a></li>
-        </ul>
-        <div class="navbar-button">
-          <button type="submit">Vacancies</button>
+        <div class="website-logo">
+          <img
+            src="/Website Code/Assets/logo-UluntuXD.svg"
+            alt="UluntuXD Logo"
+            id="logo-desktop"
+          />
+          <img
+            src="/Website Code/Assets/logo-UXD-UluntuXD.svg"
+            alt="UluntuXD Logo"
+            id="logo-mobile"
+          />
+        </div>
+        <div class="navlinks-and-navbar-button">
+          <ul class="navbar-options">
+            <li><a href="" class="navbar-link">Home</a></li>
+            <li>
+              <div class="navbar-link-dropdown">
+                <a href="" class="navbar-link">Services</a>
+                <?xml version="1.0"?><svg
+                  class="dropdown-icon"
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z"
+                    fill="#212121"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li><a href="" class="navbar-link">About</a></li>
+            <li>
+              <div class="navbar-link-dropdown">
+                <a href="" class="navbar-link">MiCanvas</a>
+                <?xml version="1.0"?><svg
+                  class="dropdown-icon"
+                  fill="none"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z"
+                    fill="#212121"
+                  />
+                </svg>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">MiCanvas</a></li>
+                    <li><a href="#">Learners</a></li>
+                    <li><a href="#">Resources</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="" class="navbar-link">Blog</a></li>
+          </ul>
+
+          <button type="submit" class="navbar-button">
+            <p>Vacancies</p>
+          </button>
         </div>
       </div>
 
-      <br /><br />
-
+      <!-- WEBSITE PAGE BREADCRUMBS-->
       <div class="main-breadcrumbs">
         <span class="breadcrumb-label">Home</span>
         <span class="material-symbols-outlined"> arrow_forward </span>
@@ -51,7 +96,9 @@
         <span class="material-symbols-outlined"> arrow_forward </span>
         <span>Resources</span>
       </div>
-      <br /><br />
+
+      <!-- PAGE CTA SECTION-->
+      <!--     <br /><br /> -->
       <div class="main-CTA">
         <h1 class="micanvas-resources-page-h1">Program Resources</h1>
         <p class="micanvas-resources-page-p">
